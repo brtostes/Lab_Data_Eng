@@ -3,7 +3,7 @@ Ingestão de Dados End-to-End (Local) — Online Store Customer Transactions
 Breno Tostes Garcia
 
 Disciplina: Fundamentos de Engenharia de Dados
-Aluno: Hercules — NUSP 18105650
+Aluno: Breno Tostes Garcia — NUSP 18105650
 
 Fonte de dados: Kraggle
 Período coletado: 2018 - 2025
