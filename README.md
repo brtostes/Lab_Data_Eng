@@ -73,17 +73,18 @@ Lab01_PART1_NUSP/
 │   └── img/
 │
 ├── sql/
-│   ├── create_schema.sql
 │   ├── create_tables.sql
-│   └── business_queries.sql
+│   ├── q1.sql
+│   ├── q2.sql
+│   ├── q3.sql
+│   ├── q4.sql
+│   └── q5.sql
 │
 ├── src/
 │   ├── 01_ingest_raw.py
 │   ├── 02_process_silver.py
 │   ├── 03_load_gold.py
-│   ├── 04_business_queries.py
 │   ├── report_graphs.py
-│   └── utils.py
 │
 ├── requirements.txt
 └── README.md
@@ -330,10 +331,15 @@ O projeto responde às seguintes perguntas analíticas:
 
 ### Scripts correspondentes
 * SQL:
-_sql/business_queries.sql_
+_q1.sql
+q2.sql
+q3.sql
+q4.sql
+q5.sql_
+
 
 * execução via Python:
-_src/04_business_queries.py_
+_03_report_graphs.py_
 
 
 ## 8. Qualidade dos dados
@@ -409,10 +415,8 @@ _python src/03_load_gold.py_
 
 ## 9.11. Executar as consultas de negócio
 Via Python
-_python src/04_business_queries.py_
+_python src/03_report_graphs.py_
 
-Via SQL
-_psql -U postgres -d lab01 -f sql/business_queries.sql_
 
 
 # 10. Ordem recomendada de execução
@@ -422,7 +426,7 @@ python src/02_process_silver.py
 python src/report_graphs.py
 psql -U postgres -d lab01 -f sql/create_tables.sql
 python src/03_load_gold.py
-python src/04_business_queries.py_
+
 
 
 # 11. Produtos gerados no projeto
